@@ -34,6 +34,7 @@ import UIKit
  - BallPulse:               BallPulse animation.
  - BallGridPulse:           BallGridPulse animation.
  - BallClipRotate:          BallClipRotate animation.
+ - BallClipRotateNoScale:   BallClipRotateNoScale animation.
  - SquareSpin:              SquareSpin animation.
  - BallClipRotatePulse:     BallClipRotatePulse animation.
  - BallClipRotateMultiple:  BallClipRotateMultiple animation.
@@ -90,6 +91,12 @@ public enum NVActivityIndicatorType: CaseIterable {
      - returns: Instance of NVActivityIndicatorAnimationBallClipRotate.
      */
     case ballClipRotate
+    /**
+     BallClipRotateNoScale.
+     
+     - returns: Instance of NVActivityIndicatorAnimationBallClipRotateNoScale.
+     */
+    case ballClipRotateNoScale
     /**
      SquareSpin.
 
@@ -282,6 +289,8 @@ public enum NVActivityIndicatorType: CaseIterable {
             return NVActivityIndicatorAnimationBallGridPulse()
         case .ballClipRotate:
             return NVActivityIndicatorAnimationBallClipRotate()
+        case .ballClipRotateNoScale:
+            return NVActivityIndicatorAnimationBallClipRotateNoScale()
         case .squareSpin:
             return NVActivityIndicatorAnimationSquareSpin()
         case .ballClipRotatePulse:
